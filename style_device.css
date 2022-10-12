@@ -1,0 +1,90 @@
+.container {
+  padding: 30px;
+  position: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+}
+
+.container > div {
+  background-image: radial-gradient(circle, #eeaeca, #94bbe9);
+  padding: 20px;
+  width: 300px;
+  border-radius: 20px;
+  border-color: black;
+  display: blocks;
+  margin: auto;
+  border:5px solid black;
+}
+
+.btn-b {
+  padding: 10px 20px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #092144;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px rgb(57, 57, 57);
+}
+.btn-b:hover {
+  background-color: #42aafe;
+}
+
+.btn-b:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.but-p {
+  width: 150px;
+  height: 150px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-20%, -20%);
+  position: absolute;
+}
+body,
+html {
+  background-image: radial-gradient(circle, #0b17ff, #e994e2);
+  background-position: center;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Bebas Neue";
+}
+h1{
+  position: relative;
+  font-size: 6em;
+  letter-spacing: 15px;
+  color: #0e3742;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+  line-height: 0.70em;
+  outline: none;
+  animation: animate 5s linear infinite;;
+}
+@keyframes animate 
+{
+  0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+  {
+    color: #0e3742;
+    text-shadow: none;
+  }
+  18.1%,20.1%,30%,50%,60.1%,80.1%,90%,100%
+  {
+    color: #fff;
+    text-shadow: 0 0 10px #03bcf4,
+    0 0 20px #03bcf4,
+    0 0 40px #03bcf4,
+    0 0 80px #03bcf4,
+    0 0 160px #03bcf4,
+     ;
+  }
+}
