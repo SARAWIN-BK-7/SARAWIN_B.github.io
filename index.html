@@ -5,21 +5,66 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- css style for page index -->
   <link rel="stylesheet" href="style_index.css" />
+  <!-- Javascript for page index -->
+  <script src="script_index.js"></script>
+  <!-- icon of InSE at KMUTNB-->
   <link rel="icon" href="logo_icon3.png" />
+  <!-- font by google family-font -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Bebas Neue">
 
+  <!-- title bar -->
   <title>SBK Curriculaum Vitae (CV)</title>
+  <!-- Tab links -->
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
+    <button class="tablinks" onclick="openCity(event, 'Profile')">Profile</button>
+    <button class="tablinks" onclick="openCity(event, 'None')">None</button>
+  </div>
+
+  <!-- Tab content -->
+  <div id="Home" class="tabcontent">
+    <h3>Home</h3>
+    <p>Home is the capital city of England.</p>
+    <span class="btn-t" onclick="this.parentElement.style.display='none'">closed</span>
+  </div>
+
+  <div id="Profile" class="tabcontent">
+    <h3>Profile</h3>
+    <p>Profile is the capital of France.</p>
+    <span class="btn-t" onclick="this.parentElement.style.display='none'">closed</span>
+  </div>
+
+  <div id="None" class="tabcontent">
+    <h3>None</h3>
+    <p>None is the capital of Japan.</p>
+    <span class="btn-t" onclick="this.parentElement.style.display='none'">closed</span>
+</div>
+
 </head>
 
-<body>
   <h1>Profile</h1>
-  <h2>Mr. Sarawin Buakaew</h2>
-  <h2>Bachelor's degree education</h2>
-  <h2>Student of Engineering at KMUTNB</h2>
-  <h2>Major : Instrument System Engineer (InSE)</h2>
-  <h2>เป็นแฟนกันนะค้าบ</h2>
+    <img src="my_profile2.jpg" alt="profile_me" align="Left">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>Mr. Sarawin Buakaew</p>
+    <p>Bachelor's degree education</p>
+    <p>Student of Engineering at KMUTNB</p>
+    <p>Major : Instrument System Engineer (InSE)</p>
+
+
+
 </body>
 
 </html>
