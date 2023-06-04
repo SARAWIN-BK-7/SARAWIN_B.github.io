@@ -1,32 +1,33 @@
 html {
-    background-image: radial-gradient(circle, #0b17ff, #e994e2);
+    /* background-image: radial-gradient(circle, #0b17ff, #e994e2); */
     background-position: center;
     height: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    text-align: center;
+
 }
 /* Header 1 topic profile  */
 h1 {
     font-family: "Bebas Neue", sans-serif;
+    text-align: center;
 }
 /* Header 2 detail profile */
 p {
     font-family: "Bebas Neue", sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     text-align: left;
-    margin: auto;
     flex-wrap: wrap;
-    /* padding: 16px; */
+    text-align: center;
 }
-
 /* Profile Image  */
 img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     object-fit: cover;
     object-position: right;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 /* Style the tab js index*/
 button {
