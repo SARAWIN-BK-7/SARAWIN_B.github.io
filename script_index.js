@@ -1,3 +1,4 @@
+
 // ตัวอย่างฟังก์ชัน JavaScript เพื่อปรับแต่งเทมเพลต Resume
 document.addEventListener("DOMContentLoaded", function() {
   // เพิ่มการตอบสนองการคลิกที่รูปโปรไฟล์
@@ -40,3 +41,61 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
+document.addEventListener("DOMContentLoaded", function() {
+  const data = [70, 80, 60, 90, 75]; // เปอร์เซ็นต์ของทักษะ
+  const labels = ['PLC', 'LabView', 'Image Processing', 'Python', 'ROS']; // ชื่อทักษะ
+
+  const ctx = document.getElementById('skills-chart').getContext('2d');
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: labels,
+      datasets: [{
+        label: 'Skills',
+        data: data,
+        backgroundColor: ['#4c6ef5']
+      }]
+    },
+    options: {
+      responsive: true,
+      scales: {
+        y: {
+          beginAtZero: true,
+          max: 100,
+          ticks: {
+            stepSize: 10
+          }
+        }
+      }
+    }
+  });
+});
+// Donut chart
+// document.addEventListener("DOMContentLoaded", function() {
+//   const data = [70, 50, 60, 70, 70]; // เปอร์เซ็นต์ของทักษะ
+//   const labels = ['PLC', 'LabView', 'Image Processing', 'Python', 'ROS']; // ชื่อทักษะ
+
+//   const ctx = document.getElementById('skills-chart').getContext('2d');
+//   new Chart(ctx, {
+//     type: 'doughnut',
+//     data: {
+//       labels: labels,
+//       datasets: [{
+//         data: data,
+//         backgroundColor: ['#ff6384', '#36a2eb', '#ffce56', '#4bc0c0', '#9966ff']
+//       }]
+//     },
+//     options: {
+//       responsive: true,
+//       plugins: {
+//         legend: {
+//           position: 'bottom',
+//         },
+//         title: {
+//           display: true,
+//           text: 'Skills'
+//         }
+//       }
+//     }
+//   });
+// });

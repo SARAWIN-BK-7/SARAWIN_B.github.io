@@ -9,11 +9,12 @@
   <link rel="stylesheet" href="style_index.css" />
   <!-- Javascript for page index -->
   <script src="script_index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <!-- icon of InSE at KMUTNB-->
   <link rel="icon" href="logo_icon3.png" />
   <!-- font by google family-font -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Outfit">
+  <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Jaldi">
   <title>SBK Curriculaum Vitae (CV)</title>
 </head>
 <body>
@@ -25,18 +26,18 @@
       <div class="profile-info">
         <h1>Sarawin Buakaew</h1>
         <p>18/1 Moo 3, Bang Samak Subdistrict, Bang Pakong District, Chachoengsao Province 24180</p>
-        <p>Tel. 061-5036105</p>
-        <p>Email. sarawin.14156@gmail.com</p>
-    </div>
+        <p>Tel : 061-5036105</p>
+        <p>Email : sarawin.14156@gmail.com</p>
+      </div>
     </header>
     <section>
       <h2>Education</h2>
         <ul>
             <li>
               <h3>King Mongkut's University of Technology North Bangkok (KMUTNB)</h3>
-              <p>Department. Instrument and Electronic Engineer</p>
-              <p>Major. Instrument System Engineer</p>
-              <p>period of study. 2563-2565</p>
+              <p>Department : Instrument and Electronic Engineer</p>
+              <p>Major : Instrument System Engineer</p>
+              <p>period of study : 2563-2565</p>
               <!-- Detail my -->
             </li>
         </ul>
@@ -47,30 +48,42 @@
           <li>
             <h3>DENSO (Thailand) Co., Ltd. (wellgrow plant)</h3>
             <p>duration of work. 2559-2560</p>
-            <p>job position. internship student </p>
+            <p>job position : internship student </p>
             <ul>
-              <li>Vocational Certificate, I studied power electronics and did an internship at Denso in the Facility Department.</li>
+              <li>Vocational Certificate, I studied electrical power and did an internship at Denso in the Facility Department.</li>
             </ul>
           </li>
           <li>
             <h3>Bang Pakong Power Plant</h3>
-            <p>duration of work. 2561-2562</p>
-            <p>job position. internship student </p>
+            <p>duration of work : 2561-2562</p>
+            <p>job position : internship student </p>
             <ul>
-              <li>High Vocational Vocational Certificate. I studied electrical power and did an internship at Bang Pakong Power Plant.</li>
+              <li>High Vocational Certificate. I studied electrical power and did an internship at Bang Pakong Power Plant.</li>
+            </ul> 
+          </li>
+          <li>
+            <h3>Bang Pakong Power Plant</h3>
+            <p>duration of work : 1 month </p> 
+            <p>job position : internship student </p>
+            <ul>
+              <li>Bachelor's degree. I studied Instrument System Engineer and did an internship at Bang Pakong Power Plant.</li>
             </ul>
           </li>
         </ul>
     </section>
     <section>
       <h2>Skills</h2>
-      <ul>
-        <li>PLC</li>
-        <li>LabView</li>
-        <li>Image Processing</li>
-        <li>Python</li>
-        <li>Robot Operating System (ROS)</li>
-      </ul>
+      <div class="skills-chart">
+      <canvas id="skills-chart"></canvas>
+        <ul>
+          <!-- <li>PLC</li>
+          <li>LabView</li>
+          <li>Image Processing, Computer Visoin</li>
+          <li>Python</li>
+          <li>Robot Operating System (ROS)</li>
+          <li></li> -->
+        </ul>
+      </div>
     </section>
   </div>
 </body>

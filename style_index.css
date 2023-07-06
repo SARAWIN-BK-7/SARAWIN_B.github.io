@@ -1,5 +1,5 @@
 body {
-  font-family: "Outfit", sans-serif;
+  font-family: "Jaldi", sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f1f1f1;
@@ -159,4 +159,61 @@ section ul li:hover {
     border-radius: 50%;
   }
 }
+/* เพิ่มโทนสีให้กับพื้นหลังของหน้าเว็บ */
+body {
+  background-color: #f2f2f2;
+}
 
+/* เพิ่มโทนสีให้กับพื้นหลังของ Container */
+.container {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* เพิ่มเอฟเฟกต์เงาให้กับพื้นหลังของ Container */
+.container {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* เพิ่มเอฟเฟกต์เงาให้กับเนื้อหาภายใน Container */
+.container header,
+.container section {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* เพิ่มโทนสีให้กับลิ้งค์ในเนื้อหา */
+a {
+  color: #007bff;
+}
+
+/* เพิ่มเอฟเฟกต์เงาให้กับลิ้งค์ในเนื้อหา */
+a {
+  text-decoration: none;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+a:hover {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 600px) {
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+  }
+}
