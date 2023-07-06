@@ -42,18 +42,18 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 document.addEventListener("DOMContentLoaded", function() {
-  const data = [70, 80, 60, 90, 75]; // เปอร์เซ็นต์ของทักษะ
-  const labels = ['PLC', 'LabView', 'Image Processing', 'Python', 'ROS']; // ชื่อทักษะ
+  const data = [70, 80, 60, 90, 75, 80, 50, 80]; // เปอร์เซ็นต์ของทักษะ
+  const labels = ['PLC', 'LabView', 'Image Processing', 'Python','html','JS','css', 'ROS']; // ชื่อทักษะ
 
   const ctx = document.getElementById('skills-chart').getContext('2d');
   new Chart(ctx, {
-    type: 'bar',
+    type: 'line', // line, bar, radar
     data: {
       labels: labels,
       datasets: [{
         label: 'Skills',
         data: data,
-        backgroundColor: ['#4c6ef5']
+        backgroundColor: ['#ff6384', '#36a2eb', '#ffce56', '#4bc0c0', '#9966ff']
       }]
     },
     options: {
