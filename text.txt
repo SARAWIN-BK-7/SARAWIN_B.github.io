@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- html page -->
-    <link rel="page-home" href="resume_page.html" />
+    <link rel="page-home" href="homepage.html" />
 
     <!-- css style for page index -->
-    <link rel="stylesheet" href="style_index.css" />
+    <link rel="stylesheet" href="style_homepage.css" />
 
     <!-- Javascript for page index -->
     <script src="script_homepage.js"></script>
@@ -27,8 +27,8 @@
     <header>
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="resume_page.html">Resume</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="index.html">Resume</a></li>
           <li><a href="#">Services</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
