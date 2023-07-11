@@ -1,4 +1,5 @@
 
+
 // ตัวอย่างฟังก์ชัน JavaScript เพื่อปรับแต่งเทมเพลต Resume
 document.addEventListener("DOMContentLoaded", function() {
   // เพิ่มการตอบสนองการคลิกที่รูปโปรไฟล์
@@ -48,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const ctx = document.getElementById('skills-chart').getContext('2d');
   new Chart(ctx, {
-    type: 'bar', // line, bar, radar
+    type: 'line', // line, bar, radar
     data: {
       labels: labels,
       datasets: [{
