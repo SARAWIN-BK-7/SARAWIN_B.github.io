@@ -35,17 +35,29 @@
   
   /* Hero section styles */
   #hero {
-    background-image: url('hero-background.jpg');
+    background-image: url('backgroud_me.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center; 
     height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+  /* #hero {
+    background-image: url('ur_backgroud.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
   
   .hero-content {
     text-align: center;
+    color: #fff;
   }
   
   .hero-content h1 {
@@ -106,4 +118,73 @@
     padding: 20px;
     text-align: center;
   }
+/* CSS สำหรับหน้าเว็บ Responsive */
+/* ปรับขนาดและจัดเรียงสำหรับหน้าจอที่มีขนาดเล็ก */
+@media (max-width: 600px) {
+  /* ปรับขนาดของเนื้อหาหลัก */
+  .container {
+    padding: 10px;
+  }
   
+  h1 {
+    font-size: 24px;
+  }
+  
+  h2 {
+    font-size: 18px;
+  }
+  
+  p {
+    font-size: 14px;
+  }
+  
+  /* ปรับเรียงลำดับของเนื้อหา */
+  section {
+    flex-direction: column;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }
+  
+  /* ปรับขนาดรูปโปรไฟล์ */
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* ปรับขนาดและจัดเรียงสำหรับหน้าจอขนาดกลางถึงขนาดใหญ่ */
+@media (min-width: 601px) and (max-width: 1200px) {
+  /* ปรับขนาดของเนื้อหาหลัก */
+  .container {
+    max-width: 800px;
+  }
+  
+  h1 {
+    font-size: 36px;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  /* ปรับเรียงลำดับของเนื้อหา */
+  section {
+    flex-direction: row;
+  }
+  
+  ul {
+    padding-left: 30px;
+  }
+  
+  /* ปรับขนาดรูปโปรไฟล์ */
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+}

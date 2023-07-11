@@ -1,95 +1,185 @@
+/* CSS สำหรับหน้า Resume */
 body {
   font-family: "Jaldi", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f1f1f1;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-/* Navigation styles */
-/* header {
-  background-color: #000;
-  padding: 20px;
+  background-color: #f2f2f2;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  margin-left: 20px;
-}
-
-nav ul li a {
+#hero {
+  background-image: url('backgroud_me.jpg');
+  background-size: cover;
+  background-position: center; 
   color: #fff;
-  text-decoration: none;
-  transition: color 0.3s ease-in-out;
+  padding: 80px 20px;
+  text-align: center;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-nav ul li a:hover {
-  color: #007bff;
-} */
-
-
-/* .container {
-  max-width: 800px;
-  margin: 20px auto;
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  opacity: 0.8;
+  user-select: all;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  opacity: 0.8;
+  user-select: all;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.hero-content .btn {
+  display: inline-block;
+  padding: 10px 20px;
   background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-} */
-/* Navigation styles for resume_page.html
-header.resume-header {
-  background-color: #000;
-  padding: 20px;
-}
-
-header.resume-header nav ul li a {
-  color: #fff;
-}
- */
-/* Navigation styles */
-header.resume-header {
-  background-color: #000;
-  padding: 20px;
-}
-
-header.resume-header nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  margin: 0;
-  padding: 0;
-}
-
-header.resume-header nav ul li {
-  margin-left: 20px;
-}
-
-header.resume-header nav ul li a {
-  color: #fff;
+  opacity: 0.7;
+  color: #101010;
   text-decoration: none;
-  transition: color 0.3s ease-in-out;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-header.resume-header nav ul li a:hover {
-  color: #007bff;
+.hero-content .btn:hover {
+  background-color: #0056b3;
+  color: #fff;
 }
 
 .container {
   max-width: 960px;
   margin: 0 auto;
   padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-/* ปรับขนาดและจัดเรียงเนื้อหาสำหรับหน้าจอที่มีขนาดเล็ก */
+
+.resume-header {
+  background-color: #000;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resume-header nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.resume-header nav ul li {
+  margin-left: 20px;
+}
+
+.resume-header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.resume-header nav ul li a:hover {
+  color: #007bff;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.profile-pic img:hover {
+  transform: scale(1.1);
+}
+
+.container header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.container header h1 {
+  font-size: 28px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.container header p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.container section {
+  margin-bottom: 30px;
+}
+
+.container section h2 {
+  font-size: 22px;
+  margin: 10px 0;
+  color: #000000;
+}
+
+.container section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  
+}
+
+.container section ul li {
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.container .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.container .btn:hover {
+  background-color: #0056b3;
+}
+/* ############################################################### */
+
+
+/* ############################################################### */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* CSS สำหรับหน้าเว็บ Responsive */
+/* ปรับขนาดและจัดเรียงสำหรับหน้าจอที่มีขนาดเล็ก */
 @media (max-width: 600px) {
+  /* ปรับขนาดของเนื้อหาหลัก */
   .container {
     padding: 10px;
   }
@@ -114,8 +204,17 @@ header.resume-header nav ul li a:hover {
   ul {
     padding-left: 20px;
   }
-/* ปรับขนาดและจัดเรียงเนื้อหาสำหรับหน้าจอขนาดกลางถึงขนาดใหญ่ */
+  
+  /* ปรับขนาดรูปโปรไฟล์ */
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* ปรับขนาดและจัดเรียงสำหรับหน้าจอขนาดกลางถึงขนาดใหญ่ */
 @media (min-width: 601px) and (max-width: 1200px) {
+  /* ปรับขนาดของเนื้อหาหลัก */
   .container {
     max-width: 800px;
   }
@@ -139,164 +238,14 @@ header.resume-header nav ul li a:hover {
   
   ul {
     padding-left: 30px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
   }
-}
-}
-header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.profile-pic {
-  width: 100px;
-  height: 100px;
-  overflow: hidden;
-  border-radius: 50%;
-  margin-right: 20px;
-}
-
-.profile-pic img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.profile-info {
-  display: flex;
-  flex-direction: column;
-}
-
-h1 {
-  font-size: 28px;
-  margin: 0;
-  color: #333;
-}
-
-h2 {
-  font-size: 22px;
-  margin: 10px 0;
-  color: #333;
-}
-
-p {
-  margin: 5px 0;
-  color: #555;
-}
-
-ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  margin-bottom: 10px;
-}
-
-li {
-  margin-bottom: 5px;
-}
-
-/* เพิ่มตกแต่งเพิ่มเติมตรงนี้ */
-
-/* ตัวอย่างการปรับแต่งสีพื้นหลังของหัวข้อแต่ละส่วน */
-h1 {
-  color: #007bff;
-}
-
-h2 {
-  color: #007bff;
-}
-
-/* ตัวอย่างการเพิ่มตกแต่งเมื่อเมาส์ hover ที่รายการการศึกษา */
-section ul li:hover {
-  background-color: #eee;
-  cursor: pointer;
-}
-
-/* การปรับแต่งรูปโปรไฟล์ */
-.profile-pic {
-  border: 2px solid #020202;
-}
-
-.profile-pic img {
-  border-radius: 50%;
-  transition: transform 0.3s ease-in-out;
-}
-
-.profile-pic img:hover {
-  transform: scale(1.1);
-}
-@media (max-width: 600px) {
-  .profile-pic img {
-    border-radius: 50%;
-  }
-}
-/* เพิ่มโทนสีให้กับพื้นหลังของหน้าเว็บ */
-body {
-  background-color: #f2f2f2;
-}
-
-/* เพิ่มโทนสีให้กับพื้นหลังของ Container */
-.container {
-  background-color: #ffffff;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* เพิ่มเอฟเฟกต์เงาให้กับพื้นหลังของ Container */
-.container {
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* เพิ่มเอฟเฟกต์เงาให้กับเนื้อหาภายใน Container */
-.container header,
-.container section {
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* เพิ่มโทนสีให้กับลิ้งค์ในเนื้อหา */
-a {
-  color: #007bff;
-}
-
-/* เพิ่มเอฟเฟกต์เงาให้กับลิ้งค์ในเนื้อหา */
-a {
-  text-decoration: none;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease-in-out;
-}
-
-a:hover {
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.profile-pic {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  overflow: hidden;
-  position: relative;
-}
-
-.profile-pic img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-@media (max-width: 600px) {
+  
+  /* ปรับขนาดรูปโปรไฟล์ */
   .profile-pic {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
   }
-}
-.btn-b {
-  font-family: "Jaldi", sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-  /* Footer styles */
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
 }

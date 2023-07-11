@@ -37,4 +37,263 @@
       transform: translateX(10px);
     }
   }
+  /* ###############################  */
+  body {
+    font-family: "Jaldi", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
   
+  /* Navigation styles */
+  header.resume-header {
+    background-color: #000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header.resume-header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header.resume-header nav ul li {
+    margin-left: 20px;
+  }
+  
+  header.resume-header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  header.resume-header nav ul li a:hover {
+    color: #007bff;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  /* ปรับขนาดและจัดเรียงเนื้อหาสำหรับหน้าจอที่มีขนาดเล็ก */
+  @media (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+    
+    h1 {
+      font-size: 24px;
+    }
+    
+    h2 {
+      font-size: 18px;
+    }
+    
+    p {
+      font-size: 14px;
+    }
+    
+    /* ปรับเรียงลำดับของเนื้อหา */
+    section {
+      flex-direction: column;
+    }
+    
+    ul {
+      padding-left: 20px;
+    }
+  /* ปรับขนาดและจัดเรียงเนื้อหาสำหรับหน้าจอขนาดกลางถึงขนาดใหญ่ */
+  @media (min-width: 601px) and (max-width: 1200px) {
+    .container {
+      max-width: 800px;
+    }
+    
+    h1 {
+      font-size: 36px;
+    }
+    
+    h2 {
+      font-size: 24px;
+    }
+    
+    p {
+      font-size: 16px;
+    }
+    
+    /* ปรับเรียงลำดับของเนื้อหา */
+    section {
+      flex-direction: row;
+    }
+    
+    ul {
+      padding-left: 30px;
+    }
+  }
+  }
+  header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin: 0;
+    color: #333;
+  }
+  
+  h2 {
+    font-size: 22px;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  /* เพิ่มตกแต่งเพิ่มเติมตรงนี้ */
+  
+  /* ตัวอย่างการปรับแต่งสีพื้นหลังของหัวข้อแต่ละส่วน */
+  h1 {
+    color: #007bff;
+  }
+  
+  h2 {
+    color: #007bff;
+  }
+  
+  /* ตัวอย่างการเพิ่มตกแต่งเมื่อเมาส์ hover ที่รายการการศึกษา */
+  section ul li:hover {
+    background-color: #eee;
+    cursor: pointer;
+  }
+  
+  /* การปรับแต่งรูปโปรไฟล์ */
+  .profile-pic {
+    border: 2px solid #020202;
+  }
+  
+  .profile-pic img {
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .profile-pic img:hover {
+    transform: scale(1.1);
+  }
+  @media (max-width: 600px) {
+    .profile-pic img {
+      border-radius: 50%;
+    }
+  }
+  /* เพิ่มโทนสีให้กับพื้นหลังของหน้าเว็บ */
+  body {
+    background-color: #f2f2f2;
+  }
+  
+  /* เพิ่มโทนสีให้กับพื้นหลังของ Container */
+  .container {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* เพิ่มเอฟเฟกต์เงาให้กับพื้นหลังของ Container */
+  .container {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* เพิ่มเอฟเฟกต์เงาให้กับเนื้อหาภายใน Container */
+  .container header,
+  .container section {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* เพิ่มโทนสีให้กับลิ้งค์ในเนื้อหา */
+  a {
+    color: #007bff;
+  }
+  
+  /* เพิ่มเอฟเฟกต์เงาให้กับลิ้งค์ในเนื้อหา */
+  a {
+    text-decoration: none;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  a:hover {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  @media (max-width: 600px) {
+    .profile-pic {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  .btn-b {
+    font-family: "Jaldi", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+    /* Footer styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
