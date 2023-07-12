@@ -113,7 +113,22 @@
     font-size: 100px;
     margin-bottom: 40px;
   }
-  
+/* ###################### */
+@keyframes rainbow-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.rainbow-text {
+  background-image: linear-gradient(to right, #000000, #ffffff);
+  background-size: 1400% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow-animation 6s linear infinite;
+}
+
+/* ###################### */
   .feature {
     margin-bottom: 40px;
     justify-content: center;
