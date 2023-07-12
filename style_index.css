@@ -125,7 +125,7 @@
   background-size: 1400% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: rainbow-animation 6s linear infinite;
+  animation: rainbow-animation 5s linear infinite;
 }
 
 /* ###################### */
