@@ -297,3 +297,28 @@
     padding: 20px;
     text-align: center;
   }
+/* ################################################################################ */
+.feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.feature img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 10px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.feature img:hover {
+  transform: scale(1.1);
+}
+
+.feature h3,
+.feature p {
+  text-align: center;
+}

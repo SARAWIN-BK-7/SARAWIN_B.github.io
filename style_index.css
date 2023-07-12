@@ -8,6 +8,9 @@
   /* Body styles */
   body {
     font-family: 'Jaldi', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
   }
   
   /* Header styles */
@@ -107,12 +110,13 @@
   }
   
   #features h2 {
-    font-size: 30px;
+    font-size: 100px;
     margin-bottom: 40px;
   }
   
   .feature {
     margin-bottom: 40px;
+    justify-content: center;
   }
   
   .feature img {
@@ -122,22 +126,64 @@
     padding: 10px;
     position: relative;
     max-width: 50%;
+    flex-wrap: wrap;
   }
   .feature img[src="ros_icon.png"] {
-    width: auto;
+    /* width: auto;
     height: 100px;
     overflow: hidden;
-    text-align: center;
-
+    text-align: center; */
+    width: auto;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
   }
+  .feature img[src="ros_icon.png"]:hover {
+    transform: scale(1.1);
+  }
+  .feature img[src="python_icon.png"] {
+    /* width: auto;
+    height: 100px;
+    overflow: hidden;
+    text-align: center; */
+    width: auto;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  .feature img[src="python_icon.png"]:hover {
+    transform: scale(1.1);
+  }
+  .feature img[src="cpp_icon.png"] {
+    /* width: auto;
+    height: 100px;
+    overflow: hidden;
+    text-align: center; */
+    width: auto;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  .feature img[src="cpp_icon.png"]:hover {
+    transform: scale(1.1);
+  }
+  
   
   .feature h3 {
     font-size: 24px;
     margin-bottom: 10px;
+    text-align: center;
   }
   
   .feature p {
     font-size: 16px;
+    text-align: center;
   }
   
   /* Footer styles */
