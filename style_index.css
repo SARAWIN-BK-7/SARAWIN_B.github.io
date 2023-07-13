@@ -129,6 +129,11 @@
 }
 
 /* ###################### */
+  .font-th {
+    font-family: 'Noto Sans Thai', sans-serif;
+    text-align: center;
+  }
+
   .feature {
     margin-bottom: 40px;
     justify-content: center;
