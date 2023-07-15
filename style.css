@@ -64,9 +64,9 @@ html {
   
   .hero-content {
     /* text-align: center; */
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 60px;
-    /* color: #fff; */
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    padding: 30px;
+    color: #fff;
   }
   
   .hero-content h1 {
@@ -375,6 +375,61 @@ html {
     } */
 
   }
+
+/* Adjustments for small-sized screens */
+@media (max-width: 600px) {
+	header {
+	  flex-direction: column;
+	  align-items: center;
+	}
+  
+	.profile-pic {
+	  width: 100px;
+	  height: 100px;
+	  margin-right: 0;
+	  margin-bottom: 10px;
+	}
+  
+	.profile-info {
+	  text-align: center;
+	}
+  }
+  
+  /* Adjustments for medium-sized screens */
+  @media (min-width: 601px) and (max-width: 1200px) {
+	header {
+	  flex-direction: row;
+	  align-items: center;
+	}
+  
+	.profile-pic {
+	  width: 150px;
+	  height: 150px;
+	  margin-right: 20px;
+	  margin-bottom: 0;
+	}
+  
+	.profile-info {
+	  text-align: left;
+	}
+  }
+  @media (min-width: 1200px) and (max-width: 5000px) {
+	header {
+	  flex-direction: row;
+	  align-items: center;
+	}
+  
+	.profile-pic {
+	  width: 150px;
+	  height: 150px;
+	  margin-right: 20px;
+	  margin-bottom: 0;
+	}
+  
+	.profile-info {
+	  text-align: left;
+	}
+  }
   .horizontal-features {
     display: flex;
     flex-wrap: wrap;
@@ -434,3 +489,4 @@ html {
 	align-items: center;
 	padding: 20px;
   }
+  
