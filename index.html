@@ -11,9 +11,10 @@
     <link rel="stylesheet" href="style.css" />
 
     <!-- Javascript for page index -->
-    <script src="script_homepage.js"></script>
-    <script src="share.js"></script>
+    <!-- <script src="script_homepage.js"></script> -->
+    <!-- <script src="share.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- icon of InSE at KMUTNB-->
     <link rel="icon" href="ros-icon.png" />
@@ -25,204 +26,190 @@
 
     <title>Sarawin Buakaew</title>
 </head>
-<body class="is-preload">
-
-  <!-- Nav -->
-    <nav id="nav">
-      <ul class="container">
-        <li><a href="#top">Top</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-
-  <!-- Home -->
-    <article id="top" class="wrapper style1">
-      <div class="container">
-        <div class="row">
-          <div class="col-4 col-5-large col-12-medium">
-            <span class="image fit"><img src="image/profile.jpg" alt="" /></span>
+<body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#hero" class="smooth-scroll-link">Home</a></li>
+          <li><a href="#Resume" class="smooth-scroll-link">Resume</a></li>
+          <li><a href="#abount" class="smooth-scroll-link">About</a></li>
+          <li><a href="#contact" class="smooth-scroll-link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  
+    <section id="hero">
+        
+      <div class="hero-content">
+        <div class="profile-profile">
+            <img src="image/profile.jpg" alt="Profile Picture">
           </div>
-          <div class="col-8 col-7-large col-12-medium">
-            <header>
-              <h1><strong>Sarawin Buakaew</strong>.</h1>
-            </header>
-            <p>And this is <strong>Miniport</strong>Welcome to my Website
-            <a href="#work" class="button large scrolly">Learn about what I do</a>
-          </div>
-        </div>
+        <!-- <h1>Welcome to My Website</h1> -->
+        <h2 class="rainbow-text">Sarawin Buakaew</h2>
+        <p>Welcome to my website</p>
+        <!-- <p>Welcome to the web page of Sarawin Buakaew.👐</p> -->
+        <!-- <a href="#" class="btn">Learn More</a> -->
+        
       </div>
-    </article>
-
-  <!-- Work -->
-    <article id="work" class="wrapper style2">
-      <div class="container">
-        <header>
-          <h2>Here's all the stuff I do.</h2>
-          <p>Odio turpis amet sed consequat eget posuere consequat.</p>
-        </header>
-        <div class="row aln-center">
-          <div class="col-4 col-6-medium col-12-small">
-            <section class="box style1">
-              <span class="icon featured fa-comments"></span>
-              <h3>Consequat lorem</h3>
-              <p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
-            </section>
-          </div>
-          <div class="col-4 col-6-medium col-12-small">
-            <section class="box style1">
-              <span class="icon solid featured fa-camera-retro"></span>
-              <h3>Lorem dolor tempus</h3>
-              <p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
-            </section>
-          </div>
-          <div class="col-4 col-6-medium col-12-small">
-            <section class="box style1">
-              <span class="icon featured fa-thumbs-up"></span>
-              <h3>Feugiat posuere</h3>
-              <p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
-            </section>
-          </div>
-        </div>
-        <footer>
-          <p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
-          <a href="#portfolio" class="button large scrolly">See some of my recent work</a>
-        </footer>
+    </section>
+  
+    <section id="features">
+      <!-- <h2 style="background-image: linear-gradient(to right, #000000, #ffffff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Sarawin Buakaew</h2> -->
+      <!-- <h2 class="rainbow-text">Sarawin Buakaew</h2> -->
+      <div class="feature">
+        <!-- <a href="https://github.com/SARAWIN-BK-7">
+          <img src="github.png" alt="github">
+        </a> -->
+        <!-- <h3>Github</h3> -->
+        <!-- <p class="font-th">สวัสดีครับ! ยินดีต้อนรับสู่หน้าเว็บของผม ผมเป็นนักศึกษาจบใหม่จาก<strong> มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ (KMUTNB)</strong></p>
+        <p class="font-th">เรียนจบสาขาวิศวกรรมระบบเครื่องมือวัด ภาควิชาวิศวกรรมเครื่องมือวัดและอิเล็คทรอนิกส์ ผมมีความสนใจด้าน Robotics, Computer Vision, Image Processing ผมเป็นคนชอบหาความรู้ใหม่ๆ และนั่นผมคิดว่าเป็นข้อดีของผม สามารถดูประวัติของผมได้ที่หน้า Resume และติดต่อผมได้ที่หน้า Contact</p>
+        <p class="font-th">ผมมีคติประจำใจของผมคือ <strong>"We may encounter many defeats but we must not be defeated."</strong></p> -->
       </div>
-    </article>
-
-  <!-- Portfolio -->
-    <article id="portfolio" class="wrapper style3">
-      <div class="container">
-        <header>
-          <h2>Here’s some stuff I made recently.</h2>
-          <p>Proin odio consequat  sapien vestibulum consequat lorem dolore feugiat.</p>
-        </header>
-        <div class="row">
-          <div class="col-4 col-6-medium col-12-small">
-            <article class="box style2">
-              <a href="#" class="image featured"><img src="image/cpp_icon.png" alt="" /></a>
-              <h3><a href="#">C++</a></h3>
-              <p>I am interested and studying.</p>
-            </article>
-          </div>
-          <div class="col-4 col-6-medium col-12-small">
-            <article class="box style2">
-              <a href="#" class="image featured"><img src="image/python_icon.png" alt="" /></a>
-              <h3><a href="#">Python</a></h3>
-              <p>I use this language in my projects.</p>
-            </article>
-          </div>
-          <div class="col-4 col-6-medium col-12-small">
-            <article class="box style2">
-              <a href="#" class="image featured"><img src="robot_o_s.png" alt="" /></a>
-              <h3><a href="#">Robot Operating System</a></h3>
-              <p>I have interest and it works.</p>
-            </article>
-          </div>
-          <div class="col-4 col-6-medium col-12-small">
-            <article class="box style2">
-              <a href="#" class="image featured"><img src="image/github-mark.png" alt="" /></a>
-              <h3><a href="#">Github</a></h3>
-              <p>source code for my project.</p>
-            </article>
-          </div>
-          <div class="col-4 col-6-medium col-12-small">
-            <article class="box style2">
-              <a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-              <h3><a href="#">Feugiat aliquam</a></h3>
-              <p>Ornare nulla proin odio consequat.</p>
-            </article>
-          </div>
-          <div class="col-4 col-6-medium col-12-small">
-            <article class="box style2">
-              <a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
-              <h3><a href="#">Sed amet ornare</a></h3>
-              <p>Ornare nulla proin odio consequat.</p>
-            </article>
-          </div>
-        </div>
-        <footer>
-          <p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
-          <a href="#contact" class="button large scrolly">Get in touch with me</a>
-        </footer>
+      <div class="feature">
+        <a href="https://github.com/SARAWIN-BK-7/proj_ros2plc"><img src="image/project_icon.png" alt="Project"></a>
+        <h3>Project</h3>
+        <p>PLC and Robotic arm controller width Robot Operating System (ROS) 👆</p>
       </div>
-    </article>
-
-  <!-- Contact -->
-    <article id="contact" class="wrapper style4">
-      <div class="container medium">
+      <div class="feature">
+        <img src="image/python_icon.png" alt="python logo">
+        <img src="image/cpp_icon.png" alt="cpp logo">
+        <img src="robot_o_s.png" alt="ROS">
+        <h3>Attention</h3>
+        <p>Python , C++, PLCs, Image Processing and Computer Vision</p>
+      </div>
+    </section>
+    <div id="Resume" class="container">
         <header>
-          <h2>Have me make stuff for you.</h2>
-          <p>Ornare nulla proin odio consequat sapien vestibulum ipsum.</p>
-        </header>
-        <!-- <div class="row">
-          <div class="col-12">
-            <form method="post" action="#">
-              <div class="row">
-                <div class="col-6 col-12-small">
-                  <input type="text" name="name" id="name" placeholder="Name" />
-                </div>
-                <div class="col-6 col-12-small">
-                  <input type="text" name="email" id="email" placeholder="Email" />
-                </div>
-                <div class="col-12">
-                  <input type="text" name="subject" id="subject" placeholder="Subject" />
-                </div>
-                <div class="col-12">
-                  <textarea name="message" id="message" placeholder="Message"></textarea>
-                </div>
-                <div class="col-12">
-                  <ul class="actions">
-                    <li><input type="submit" value="Send Message" /></li>
-                    <li><input type="reset" value="Clear Form" class="alt" /></li>
-                  </ul>
-                </div>
-              </div>
-            </form>
-          </div> -->
-          <div class="col-12">
-            <hr />
-            <h3>Find me on ...</h3>
-            <ul class="social">
-              <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-              <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-              <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-              <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-              <li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-              <li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
-              <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-              <!--
-              <li><a href="#" class="icon solid fa-rss"><span>RSS</span></a></li>
-              <li><a href="#" class="icon brands fa-instagram"><span>Instagram</span></a></li>
-              <li><a href="#" class="icon brands fa-foursquare"><span>Foursquare</span></a></li>
-              <li><a href="#" class="icon brands fa-skype"><span>Skype</span></a></li>
-              <li><a href="#" class="icon brands fa-soundcloud"><span>Soundcloud</span></a></li>
-              <li><a href="#" class="icon brands fa-youtube"><span>YouTube</span></a></li>
-              <li><a href="#" class="icon brands fa-blogger"><span>Blogger</span></a></li>
-              <li><a href="#" class="icon brands fa-flickr"><span>Flickr</span></a></li>
-              <li><a href="#" class="icon brands fa-vimeo"><span>Vimeo</span></a></li>
-              -->
-            </ul>
-            <hr />
+          <div class="profile-pic">
+            <img src="image/profile.jpg" alt="Profile Picture">
           </div>
-        </div>
-        <footer>
-          <ul id="copyright">
-            <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            <div class="profile-info">
+              <h1>Sarawin Buakaew</h1>
+              <p>18/1 Moo 3, Bang Samak Subdistrict, Bang Pakong District, Chachoengsao Province 24180</p>
+              <p>Tel : 061-5036105</p>
+              <p>Email : sarawin.14156@gmail.com</p>
+          </div>
+          </header>
+        <section class="data-container">
+          <h2>Education</h2>
+          <ul>
+            <li>
+              <h3>King Mongkut's University of Technology North Bangkok (KMUTNB)</h3>
+              <p>Department : Instrument and Electronic Engineer</p>
+              <p>Major : Instrument System Engineer</p>
+              <p>period of study : 2563-2565</p>
+            </li>
+            <!-- เพิ่มรายการการศึกษาเพิ่มเติม (หากมี) -->
           </ul>
-        </footer>
+        </section>
+        <section>
+          <h2>Experience</h2>
+            <ul>
+              <li>
+                <h3>DENSO (Thailand) Co., Ltd. (wellgrow plant)</h3>
+                <p>duration of work. 2559-2560</p>
+                <p>job position : internship student </p>
+                <ul>
+                  <li>Vocational Certificate, I studied electrical power and did an internship at Denso in the Facility Department.</li>
+                </ul>
+              </li>
+              <li>
+                <h3>Bang Pakong Power Plant</h3>
+                <p>duration of work : 2561-2562</p>
+                <p>job position : internship student </p>
+                <ul>
+                  <li>High Vocational Certificate. I studied electrical power and did an internship at Bang Pakong Power Plant.</li>
+                </ul> 
+              </li>
+              <li>
+                <h3>Bang Pakong Power Plant</h3>
+                <p>duration of work : 1 month </p> 
+                <p>job position : internship student </p>
+                <ul>
+                  <li>Bachelor's degree. I studied Instrument System Engineer and did an internship at Bang Pakong Power Plant.</li>
+                </ul>
+              </li>
+            </ul>
+        </section>
+        <section>
+          <h2>Skills</h2>
+          <div class="skills-chart">
+          <!-- <canvas id="skills-chart"></canvas> -->
+            <ul>
+              <li>PLC</li>
+              <li>LabView</li>
+              <li>Image Processing</li>
+              <li>Computer Visoin</li>
+              <li>Python</li>
+              <li>Robot Operating System (ROS)</li>
+              <!-- <li></li> -->
+            </ul>
+            <div class="dowload-resume">
+            <!-- <h1>Welcome to My Resume</h1> -->
+            <!-- <p>Resume paper</p> -->
+            <a href="ros_to_plc.pdf" class="btn btn-download" download>Download Resume</a>
+            </div>
+
+          </div>
+        </section>
       </div>
-    </article>
+      <!-- <section id="hero">
 
-  <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+      </section> -->
+      <div id="contact">
+        <section id="features" class="horizontal-features">
+          <div class="feature">
+            <a href="https://web.facebook.com/sarawin.buakeaw/" atl="facebook"><img src="image/facebook.png" alt="facebook"></a>
+            <p><strong>Facebook</strong></p>
+          </div>
+          <div class="feature">
+            <a href="https://line.me/ti/p/BAoyMQafhA" alt="line"><img src="image/line.png" alt="Line"></a>
+            <p><strong>Line</strong></p>
+          </div>
+          <div class="feature">
+            <a href="https://www.instagram.com/_srwbk_/?fbclid=IwAR1jw9y1HFtxgBQXXKy-zebgV3jNV5VWfz3h1MJ_JIWhJvIoPTdxNdC60m0" alt="Instragram"></a><img src="image/instagram.png" alt="IG">
+            <p><strong>Instagram: _srwbk_</strong></p>
+          </div>
+          <div class="feature">
+            <a href="https://github.com/SARAWIN-BK-7" alt="Github"><img src="image/github-mark.png" alt="Github"></a>
+            <p><strong>GitHub</strong></p>
+          </div>
+          <div class="feature">
+            <a href="Sarawin.14156@gmail.com" alt="Gmail"><img src="image/new.png" alt="Gmail"></a>
+            <p><strong>Sarawin.14156@gmail.com</strong></p>
+          </div>
+          <div class="feature">
+            <a href="tel:061-5036105" alt="Gmail"><img src="image/phone-call.png" alt="Gmail"></a>
+            <p><strong>Tel. 061-5036105</strong></p>
+          </div>
+        </section>
+      </div>
+      
+    <footer>
+      <p>&copy; 2023 My Website. All rights reserved.</p>
+    </footer>
+    <script>
+      const linkElements = document.querySelectorAll('.smooth-scroll-link');
 
-</body>
-</html>
+      linkElements.forEach(link => {
+        link.addEventListener('click', (event) => {
+          event.preventDefault();
+      
+          const target = document.querySelector(link.getAttribute('href'));
+          const offset = 90; // ปรับค่าตามต้องการให้เหมาะสม
+      
+          // ตรวจสอบว่า target ไม่เป็น null ก่อนที่จะเลื่อนหน้าเว็บ
+          if (target) {
+            const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+      
+            window.scrollTo({
+              top: targetPosition - offset,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    </script>
+
+  </body>
+  </html>
