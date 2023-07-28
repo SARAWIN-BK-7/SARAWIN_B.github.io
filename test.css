@@ -1,120 +1,18 @@
-@import url(fontawesome-all.min.css);
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;600&display=swap');
-
-
-/* Reset some default styles */
-body, h1, h2, h3, p, ul, li {
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+	background: linear-gradient(-45deg, #373737, #000000, #00bbff, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
 }
 
-/* Customize header, main, footer, and other elements as needed */
-header {
-    text-align: center;
-    background-color: #007bff;
-    padding: 20px 0;
-    color: #fff;
-}
-
-header h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-main {
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column; /* Center content vertically */
-}
-
-footer {
-    text-align: center;
-    background-color: #007bff;
-    padding: 10px 0;
-    color: #fff;
-}
-
-/* Add styles for the video */
-.vdo-size {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    filter: brightness(70%) contrast(120%);
-}
-
-/* Add styles for a centered text overlay */
-.overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-}
-
-.overlay h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.overlay p {
-    font-size: 1.5rem;
-}
-
-/* Add a button style */
-.button {
-    display: inline-block;
-    padding: 12px 24px;
-    background-color: #007bff;
-    color: #fff;
-    font-size: 1rem;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
-
-.button:hover {
-    background-color: #0056b3;
-}
-
-/* Add styles for the main content */
-main section {
-    max-width: 800px;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
-main h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-main p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-}
-
-main ul {
-    list-style: disc;
-    margin-left: 20px;
-}
-
-main li {
-    font-size: 1.2rem;
-    line-height: 1.6;
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
