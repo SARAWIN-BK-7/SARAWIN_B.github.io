@@ -3,212 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 
-
-    <!-- css style for page index -->
-    <link rel="stylesheet" href="style.css" />
-
-    <!-- Javascript for page index -->
-    <!-- <script src="script_homepage.js"></script> -->
-    <!-- <script src="share.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <!-- icon of InSE at KMUTNB-->
     <link rel="icon" href="ros-icon.png" />
 
-    <!-- font by google family-font -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Jaldi">
-    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Noto Sans Thai">
-
-    <title>Sarawin Buakaew</title>
+    <title>SRWBK</title>
 </head>
 <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#hero" class="smooth-scroll-link">Home</a></li>
-          <li><a href="#Resume" class="smooth-scroll-link">Resume</a></li>
-          <li><a href="#abount" class="smooth-scroll-link">About</a></li>
-          <li><a href="#contact" class="smooth-scroll-link">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-  
-    <section id="hero">
-        
-      <div class="hero-content">
-        <div class="profile-profile">
-            <img src="image/profile_2.JPG" alt="Profile Picture">
-          </div>
-        <!-- <h1>Welcome to My Website</h1> -->
-        <h2 class="rainbow-text">Sarawin Buakaew</h2>
-        <p>Welcome to my website</p>
-        <!-- <p>Welcome to the web page of Sarawin Buakaew.👐</p> -->
-        <!-- <a href="#" class="btn">Learn More</a> -->
-        
+
+  <div class="card" data-state="#about">
+    <div class="card-header">
+      <div class="card-cover" style="background-image: url('/image/profile.jpg')"></div>
+      <img class="card-avatar" src="/image/profile.jpg" alt="avatar" />
+      <h1 class="card-fullname">Sarawin Buakaew</h1>
+      <h2 class="card-jobtitle"><strong>Instrument Engineer</strong></h2>
+    </div>
+    <div class="card-main">
+      <div class="card-section is-active" id="about">
+        <div class="card-content">
+          <div class="card-subtitle">ABOUT ME</div>
+          <p class="card-desc">I'm gratuated from kingmongkut's university nort bangkok, marjoring Instrumentation System Engineer, but me passionate Coding, Robotic and Develop yourself.
+          </p>
+        </div>
+        <div class="card-social">
+          <a href="https://www.facebook.com/sarawin.buakeaw/"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.997 3.985h2.191V.169C17.81.117 16.51 0 14.996 0c-3.159 0-5.323 1.987-5.323 5.639V9H6.187v4.266h3.486V24h4.274V13.267h3.345l.531-4.266h-3.877V6.062c.001-1.233.333-2.077 2.051-2.077z"/></svg></a>
+          <a href="https://line.me/ti/p/BAoyMQafhA"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-line" viewBox="0 0 16 16">
+            <path d="M8 0c4.411 0 8 2.912 8 6.492 0 1.433-.555 2.723-1.715 3.994-1.678 1.932-5.431 4.285-6.285 4.645-.83.35-.734-.197-.696-.413l.003-.018.114-.685c.027-.204.055-.521-.026-.723-.09-.223-.444-.339-.704-.395C2.846 12.39 0 9.701 0 6.492 0 2.912 3.59 0 8 0ZM5.022 7.686H3.497V4.918a.156.156 0 0 0-.155-.156H2.78a.156.156 0 0 0-.156.156v3.486c0 .041.017.08.044.107v.001l.002.002.002.002a.154.154 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157Zm.791-2.924a.156.156 0 0 0-.156.156v3.486c0 .086.07.155.156.155h.562c.086 0 .155-.07.155-.155V4.918a.156.156 0 0 0-.155-.156h-.562Zm3.863 0a.156.156 0 0 0-.156.156v2.07L7.923 4.832a.17.17 0 0 0-.013-.015v-.001a.139.139 0 0 0-.01-.01l-.003-.003a.092.092 0 0 0-.011-.009h-.001L7.88 4.79l-.003-.002a.029.029 0 0 0-.005-.003l-.008-.005h-.002l-.003-.002-.01-.004-.004-.002a.093.093 0 0 0-.01-.003h-.002l-.003-.001-.009-.002h-.006l-.003-.001h-.004l-.002-.001h-.574a.156.156 0 0 0-.156.155v3.486c0 .086.07.155.156.155h.56c.087 0 .157-.07.157-.155v-2.07l1.6 2.16a.154.154 0 0 0 .039.038l.001.001.01.006.004.002a.066.066 0 0 0 .008.004l.007.003.005.002a.168.168 0 0 0 .01.003h.003a.155.155 0 0 0 .04.006h.56c.087 0 .157-.07.157-.155V4.918a.156.156 0 0 0-.156-.156h-.561Zm3.815.717v-.56a.156.156 0 0 0-.155-.157h-2.242a.155.155 0 0 0-.108.044h-.001l-.001.002-.002.003a.155.155 0 0 0-.044.107v3.486c0 .041.017.08.044.107l.002.003.002.002a.155.155 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156Z"/>
+              </svg></a>
+          <a href="https://www.instagram.com/_srwbk_/?fbclid=IwAR1jw9y1HFtxgBQXXKy-zebgV3jNV5VWfz3h1MJ_JIWhJvIoPTdxNdC60m0"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+              <path d="M301 256c0 24.852-20.148 45-45 45s-45-20.148-45-45 20.148-45 45-45 45 20.148 45 45zm0 0" />
+              <path d="M332 120H180c-33.086 0-60 26.914-60 60v152c0 33.086 26.914 60 60 60h152c33.086 0 60-26.914 60-60V180c0-33.086-26.914-60-60-60zm-76 211c-41.355 0-75-33.645-75-75s33.645-75 75-75 75 33.645 75 75-33.645 75-75 75zm86-146c-8.285 0-15-6.715-15-15s6.715-15 15-15 15 6.715 15 15-6.715 15-15 15zm0 0" />
+              <path d="M377 0H135C60.562 0 0 60.563 0 135v242c0 74.438 60.563 135 135 135h242c74.438 0 135-60.563 135-135V135C512 60.562 451.437 0 377 0zm45 332c0 49.625-40.375 90-90 90H180c-49.625 0-90-40.375-90-90V180c0-49.625 40.375-90 90-90h152c49.625 0 90 40.375 90 90zm0 0" /></svg></a>
+          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg></a>
+        </div>
       </div>
-    </section>
-  
-    <section id="features">
-      <!-- <h2 style="background-image: linear-gradient(to right, #000000, #ffffff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Sarawin Buakaew</h2> -->
-      <!-- <h2 class="rainbow-text">Sarawin Buakaew</h2> -->
-      <div class="feature">
-        <!-- <a href="https://github.com/SARAWIN-BK-7">
-          <img src="github.png" alt="github">
-        </a> -->
-        <!-- <h3>Github</h3> -->
-        <!-- <p class="font-th">สวัสดีครับ! ยินดีต้อนรับสู่หน้าเว็บของผม ผมเป็นนักศึกษาจบใหม่จาก<strong> มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ (KMUTNB)</strong></p>
-        <p class="font-th">เรียนจบสาขาวิศวกรรมระบบเครื่องมือวัด ภาควิชาวิศวกรรมเครื่องมือวัดและอิเล็คทรอนิกส์ ผมมีความสนใจด้าน Robotics, Computer Vision, Image Processing ผมเป็นคนชอบหาความรู้ใหม่ๆ และนั่นผมคิดว่าเป็นข้อดีของผม สามารถดูประวัติของผมได้ที่หน้า Resume และติดต่อผมได้ที่หน้า Contact</p>
-        <p class="font-th">ผมมีคติประจำใจของผมคือ <strong>"We may encounter many defeats but we must not be defeated."</strong></p> -->
-      </div>
-      <div class="feature">
-        <!-- <a href="https://github.com/SARAWIN-BK-7/proj_ros2plc"><img src="image/project_icon.png" alt="Project"></a> -->
-        <h3>Project</h3>
-        <p>PLC and Robotic arm controller width Robot Operating System (ROS) 👆</p>
-      </div>
-      <!-- <div class="feature">
-        <img src="image/python_icon.png" alt="python logo">
-        <img src="image/cpp_icon.png" alt="cpp logo">
-        <img src="robot_o_s.png" alt="ROS">
-        <h3>Attention</h3>
-        <p>Python , C++, PLCs, Image Processing and Computer Vision</p>
-      </div> -->
-    </section>
-    <div id="Resume" class="container">
-        <header>
-          <div class="profile-pic">
-            <img src="image/profile_2.JPG" alt="Profile Picture">
-          </div>
-            <div class="profile-info">
-              <h1>Sarawin Buakaew</h1>
-              <p>18/1 Moo 3, Bang Samak Subdistrict, Bang Pakong District, Chachoengsao Province 24180</p>
-              <p>Tel : 061-5036105</p>
-              <p>Email : sarawin.14156@gmail.com</p>
-          </div>
-          </header>
-        <section class="data-container">
-          <h2>Education</h2>
-          <ul>
-            <li>
-              <h3>King Mongkut's University of Technology North Bangkok (KMUTNB)</h3>
-              <p>Department : Instrument and Electronic Engineer</p>
-              <p>Major : Instrument System Engineer</p>
-              <p>period of study : 2563-2565</p>
-            </li>
-            <!-- เพิ่มรายการการศึกษาเพิ่มเติม (หากมี) -->
-          </ul>
-        </section>
-        <section>
-          <h2>Experience</h2>
-            <ul>
-              <li>
-                <h3>DENSO (Thailand) Co., Ltd. (wellgrow plant)</h3>
-                <p>duration of work. 2559-2560</p>
-                <p>job position : internship student </p>
-                <ul>
-                  <li>Vocational Certificate, I studied electrical power and did an internship at Denso in the Facility Department.</li>
-                </ul>
-              </li>
-              <li>
-                <h3>Bang Pakong Power Plant</h3>
-                <p>duration of work : 2561-2562</p>
-                <p>job position : internship student </p>
-                <ul>
-                  <li>High Vocational Certificate. I studied electrical power and did an internship at Bang Pakong Power Plant.</li>
-                </ul> 
-              </li>
-              <li>
-                <h3>Bang Pakong Power Plant</h3>
-                <p>duration of work : 1 month </p> 
-                <p>job position : internship student </p>
-                <ul>
-                  <li>Bachelor's degree. I studied Instrument System Engineer and did an internship at Bang Pakong Power Plant.</li>
-                </ul>
-              </li>
-            </ul>
-        </section>
-        <section>
-          <h2>Skills</h2>
-          <div class="skills-chart">
-          <!-- <canvas id="skills-chart"></canvas> -->
-            <ul>
-              <li>PLC</li>
-              <li>LabView</li>
-              <li>Image Processing</li>
-              <li>Computer Visoin</li>
-              <li>Python</li>
-              <li>Robot Operating System (ROS)</li>
-              <!-- <li></li> -->
-            </ul>
-            <div class="dowload-resume">
-            <!-- <h1>Welcome to My Resume</h1> -->
-            <!-- <p>Resume paper</p> -->
-            <a href="Resume.pdf" class="btn btn-download" download>Download Resume</a>
+      <div class="card-section" id="experience">
+        <div class="card-content">
+          <div class="card-subtitle">WORK EXPERIENCE</div>
+          <div class="card-timeline">
+            <div class="card-item" data-year="2015">
+              <div class="card-item-title"><span>DENSO (Thailand) Co.ltd</span></div>
+              <div class="card-item-desc">Interns in position Facility&Utiliy department.</div>
             </div>
-
+            <div class="card-item" data-year="2018">
+              <div class="card-item-title"><span>BangPakong Power Plant</span></div>
+              <div class="card-item-desc">Interns in position Maintenace Electrical and Instrument.</div>
+            </div>
+            <div class="card-item" data-year="2022">
+              <div class="card-item-title"><span>BangPakong Power Plant</span></div>
+              <div class="card-item-desc">Interns in position Maintenace Instrument. department and Turbine Supervisory</div>
+            </div>
+            <!-- <div class="card-item" data-year="2020">
+              <div class="card-item-title">Full-Stack Developer at <span>CodePen</span></div>
+              <div class="card-item-desc">Responsible for the encomposing brand expreience.</div>
+            </div> -->
           </div>
-        </section>
+        </div>
       </div>
-      <!-- <section id="hero">
-
-      </section> -->
-
-    <footer>
-      <div id="contact">
-        <section id="features" class="horizontal-features">
-          <div class="feature">
-            <a href="https://web.facebook.com/sarawin.buakeaw/" atl="facebook"><img src="image/facebook.png" alt="facebook"></a>
-            <p><strong>Facebook</strong></p>
+      <div class="card-section" id="contact">
+        <div class="card-content">
+          <div class="card-subtitle">CONTACT</div>
+          <div class="card-contact-wrapper">
+            <div class="card-contact">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" /></svg>
+                18/1 Moo 3, Bang Samak, Bang Pakong, Chachoengsao, 24180
+            </div>
+            <div class="card-contact">
+              <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" /></svg>(+66)061-5036105</div>
+            <div class="card-contact">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <path d="M22 6l-10 7L2 6" /></svg>
+              sarawinbuakaewpp@gmail.com
+            </div>
+            <button class="contact-me"><a href="Resume.pdf" download >Resume Download</a></button>
           </div>
-          <div class="feature">
-            <a href="https://line.me/ti/p/BAoyMQafhA" alt="line"><img src="image/line.png" alt="Line"></a>
-            <p><strong>Line</strong></p>
-          </div>
-          <div class="feature">
-            <a href="https://www.instagram.com/_srwbk_/?fbclid=IwAR1jw9y1HFtxgBQXXKy-zebgV3jNV5VWfz3h1MJ_JIWhJvIoPTdxNdC60m0" alt="Instragram"></a><img src="image/instagram.png" alt="IG">
-            <p><strong>Instagram: _srwbk_</strong></p>
-          </div>
-          <div class="feature">
-            <a href="https://github.com/SARAWIN-BK-7" alt="Github"><img src="image/github-mark-white.png" alt="Github"></a>
-            <p><strong>GitHub</strong></p>
-          </div>
-          <div class="feature">
-            <a href="Sarawin.14156@gmail.com" alt="Gmail"><img src="image/new.png" alt="Gmail"></a>
-            <p><strong>Sarawin.14156@gmail.com</strong></p>
-          </div>
-          <div class="feature">
-            <a href="tel:061-5036105" alt="Gmail"><img src="image/phone-call.png" alt="Gmail"></a>
-            <p><strong>Tel. 061-5036105</strong></p>
-          </div>
-        </section>
+        </div>
       </div>
-      
-      <p>&copy; 2023 My Website. All rights reserved.</p>
-    </footer>
-    <script>
-      const linkElements = document.querySelectorAll('.smooth-scroll-link');
-
-      linkElements.forEach(link => {
-        link.addEventListener('click', (event) => {
-          event.preventDefault();
-      
-          const target = document.querySelector(link.getAttribute('href'));
-          const offset = 90; // ปรับค่าตามต้องการให้เหมาะสม
-      
-          // ตรวจสอบว่า target ไม่เป็น null ก่อนที่จะเลื่อนหน้าเว็บ
-          if (target) {
-            const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
-      
-            window.scrollTo({
-              top: targetPosition - offset,
-              behavior: 'smooth'
-            });
-          }
-        });
-      });
-    </script>
-
-  </body>
-  </html>
+      <div class="card-buttons">
+        <button data-section="#about" class="is-active">ABOUT</button>
+        <button data-section="#experience">EXPERIENCE</button>
+        <button data-section="#contact">CONTACT</button>
+      </div>
+    </div>
+  </div>  
+  
+  <script>
+    const buttons = document.querySelectorAll(".card-buttons button");
+    const sections = document.querySelectorAll(".card-section");
+    const card = document.querySelector(".card");
+    
+    const handleButtonClick = (e) => {
+      const targetSection = e.target.getAttribute("data-section");
+      const section = document.querySelector(targetSection);
+      targetSection !== "#about"
+        ? card.classList.add("is-active")
+        : card.classList.remove("is-active");
+      card.setAttribute("data-state", targetSection);
+      sections.forEach((s) => s.classList.remove("is-active"));
+      buttons.forEach((b) => b.classList.remove("is-active"));
+      e.target.classList.add("is-active");
+      section.classList.add("is-active");
+    };
+    
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", handleButtonClick);
+    });
+    
+  </script>
+</body>
+</html>
