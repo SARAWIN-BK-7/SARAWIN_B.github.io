@@ -58,13 +58,14 @@
               <div class="card-item-title"><span>BangPakong Power Plant</span></div>
               <div class="card-item-desc">Interns in position Maintenace Instrument. department and Turbine Supervisory</div>
             </div>
-            <!-- <div class="card-item" data-year="2020">
-              <div class="card-item-title">Full-Stack Developer at <span>CodePen</span></div>
-              <div class="card-item-desc">Responsible for the encomposing brand expreience.</div>
-            </div> -->
+            <div class="card-item" data-year="2023">
+              <div class="card-item-title">Project Control UR5 at <span>KMUTNB</span></div>
+              <div class="card-item-desc">Develop ROS node for PLC to Robotic by modbus TCP/IP, test with universal robot </div>
+            </div>
           </div>
         </div>
       </div>
+
       <div class="card-section" id="contact">
         <div class="card-content">
           <div class="card-subtitle">CONTACT</div>
@@ -84,7 +85,11 @@
                 <path d="M22 6l-10 7L2 6" /></svg>
               sarawinbuakaewpp@gmail.com
             </div>
-            <button class="contact-me"><a href="Resume.pdf" download >Resume Download</a></button>
+            <button class="contact-me">
+              <a href="Resume.pdf"  class="btn btn-download" download="resume_sarawinb" >
+                Resume Download
+              </a>
+            </button>
           </div>
         </div>
       </div>
@@ -97,27 +102,29 @@
   </div>  
   
   <script>
-    const buttons = document.querySelectorAll(".card-buttons button");
-    const sections = document.querySelectorAll(".card-section");
-    const card = document.querySelector(".card");
-    
-    const handleButtonClick = (e) => {
-      const targetSection = e.target.getAttribute("data-section");
-      const section = document.querySelector(targetSection);
-      targetSection !== "#about"
-        ? card.classList.add("is-active")
-        : card.classList.remove("is-active");
-      card.setAttribute("data-state", targetSection);
-      sections.forEach((s) => s.classList.remove("is-active"));
-      buttons.forEach((b) => b.classList.remove("is-active"));
-      e.target.classList.add("is-active");
-      section.classList.add("is-active");
-    };
-    
-    buttons.forEach((btn) => {
-      btn.addEventListener("click", handleButtonClick);
-    });
+
+        const buttons = document.querySelectorAll(".card-buttons button");
+        const sections = document.querySelectorAll(".card-section");
+        const card = document.querySelector(".card");
+        
+        const handleButtonClick = (e) => {
+          const targetSection = e.target.getAttribute("data-section");
+          const section = document.querySelector(targetSection);
+          targetSection !== "#about"
+            ? card.classList.add("is-active")
+            : card.classList.remove("is-active");
+          card.setAttribute("data-state", targetSection);
+          sections.forEach((s) => s.classList.remove("is-active"));
+          buttons.forEach((b) => b.classList.remove("is-active"));
+          e.target.classList.add("is-active");
+          section.classList.add("is-active");
+        };
+        
+        buttons.forEach((btn) => {
+          btn.addEventListener("click", handleButtonClick);
+        });
     
   </script>
+  
 </body>
 </html>
